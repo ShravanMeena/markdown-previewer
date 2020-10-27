@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DOMPurify from 'dompurify';
 import "./_app.scss";
 
 let marked = require("marked");
@@ -138,7 +139,7 @@ export default class App extends Component {
             <div
               className='markdown'
               dangerouslySetInnerHTML={{
-                __html: marked(this.state.markdown),
+                __html: marked(DOMPurify.sanitize(this.state.markdown)),
               }}
             />
           </div>
