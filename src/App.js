@@ -74,8 +74,7 @@ _You **can** combine them_
 
 ## Links
 
-
-
+This is a [link](https://www.google.com/) to Google.
 
 ## Blockquotes
 
@@ -100,6 +99,8 @@ _You **can** combine them_
 
 
 ## Inline code
+
+This is an example of inline code: \`import  pandas as pd\`
 
   `;
 
